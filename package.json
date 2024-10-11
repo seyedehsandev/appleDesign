@@ -1,0 +1,13 @@
+{
+  "name": "apple",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tailwind.config.js",
+  "scripts": {
+    
+    "test": "echo \"Error: no test specified\" && exit 1" ,
+    "tail": "npx tailwindcss -i ./input.css -o ./output.css --watch"
+  },
+  "author": "",
+  "license": "ISC"
+}
