@@ -579,6 +579,10 @@ video {
   width: fit-content;
 }
 
+.w-auto {
+  width: auto;
+}
+
 .min-w-\[773px\] {
   min-width: 773px;
 }
@@ -589,6 +593,10 @@ video {
 
 .max-w-\[1007px\] {
   max-width: 1007px;
+}
+
+.max-w-\[1024px\] {
+  max-width: 1024px;
 }
 
 .flex-1 {
