@@ -6,7 +6,6 @@ module.exports = {
       colors: {
        "navbg" : "rgba(22, 22, 23, .8)" , 
        "btncolor" : "#0071e3"
-       
       } , 
       screens: {
 
@@ -14,7 +13,12 @@ module.exports = {
       } ,
       backgroundImage: {
         'hero-pattern': "url('./images/iphone16.jpg')",
-        'footer-texture': "url('/img/footer-texture.png')",
+        'iphone': "url('/images/ooo.jpg')",
+        'watch': "url('/images/watch.jpg')",
+        'airpod': "url('/images/airpodmini.jpg')",
+
+
+        
       }
     },
   },
