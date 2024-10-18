@@ -558,9 +558,9 @@ video {
   width: 100%;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 735px) {
   .container {
-    max-width: 640px;
+    max-width: 735px;
   }
 }
 
@@ -570,9 +570,9 @@ video {
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1069px) {
   .container {
-    max-width: 1024px;
+    max-width: 1069px;
   }
 }
 
@@ -586,6 +586,10 @@ video {
   .container {
     max-width: 1536px;
   }
+}
+
+.collapse {
+  visibility: collapse;
 }
 
 .fixed {
@@ -602,6 +606,10 @@ video {
 
 .ml-\[13px\] {
   margin-left: 13px;
+}
+
+.ml-\[9px\] {
+  margin-left: 9px;
 }
 
 .mt-\[17px\] {
@@ -626,6 +634,10 @@ video {
 
 .h-12 {
   height: 3rem;
+}
+
+.h-\[45px\] {
+  height: 45px;
 }
 
 .h-\[500px\] {
@@ -653,6 +665,10 @@ video {
   width: 100%;
 }
 
+.max-w-\[980px\] {
+  max-width: 980px;
+}
+
 .cursor-pointer {
   cursor: pointer;
 }
@@ -661,8 +677,20 @@ video {
   flex-direction: column;
 }
 
+.items-start {
+  align-items: flex-start;
+}
+
+.items-end {
+  align-items: flex-end;
+}
+
 .items-center {
   align-items: center;
+}
+
+.justify-start {
+  justify-content: flex-start;
 }
 
 .justify-center {
@@ -692,6 +720,21 @@ video {
   row-gap: 0.75rem;
 }
 
+.gap-y-\[9\.6px\] {
+  row-gap: 9.6px;
+}
+
+.divide-y-2 > :not([hidden]) ~ :not([hidden]) {
+  --tw-divide-y-reverse: 0;
+  border-top-width: calc(2px * calc(1 - var(--tw-divide-y-reverse)));
+  border-bottom-width: calc(2px * var(--tw-divide-y-reverse));
+}
+
+.divide-gray-500 > :not([hidden]) ~ :not([hidden]) {
+  --tw-divide-opacity: 1;
+  border-color: rgb(107 114 128 / var(--tw-divide-opacity));
+}
+
 .overflow-y-scroll {
   overflow-y: scroll;
 }
@@ -718,16 +761,41 @@ video {
   background-color: rgb(0 113 227 / var(--tw-bg-opacity));
 }
 
+.bg-footerbg {
+  --tw-bg-opacity: 1;
+  background-color: rgb(245 245 247 / var(--tw-bg-opacity));
+}
+
 .bg-navbg {
   background-color: rgba(22, 22, 23, .8);
+}
+
+.bg-airpod {
+  background-image: url('/images/airpodmini.jpg');
+}
+
+.bg-cardbg {
+  background-image: url('/images/cardbg.jpg');
 }
 
 .bg-hero-mini {
   background-image: url('./images/16promini.jpg');
 }
 
+.bg-ipadmini {
+  background-image: url('/images/ipadmini.jpg');
+}
+
 .bg-iphone16mini {
   background-image: url('/images/iphone16mini.jpg');
+}
+
+.bg-trade {
+  background-image: url('/images/tradein.jpg');
+}
+
+.bg-ultra {
+  background-image: url('/images/ulrta1.jpg');
 }
 
 .bg-watchmobile {
@@ -749,11 +817,6 @@ video {
 .px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
-}
-
-.px-3 {
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
 }
 
 .px-4 {
@@ -786,17 +849,34 @@ video {
   padding-bottom: 47px;
 }
 
+.py-\[51px\] {
+  padding-top: 51px;
+  padding-bottom: 51px;
+}
+
 .py-\[7px\] {
   padding-top: 7px;
   padding-bottom: 7px;
+}
+
+.pb-\[11px\] {
+  padding-bottom: 11px;
+}
+
+.pb-\[50px\] {
+  padding-bottom: 50px;
+}
+
+.pb-\[51px\] {
+  padding-bottom: 51px;
 }
 
 .pt-12 {
   padding-top: 3rem;
 }
 
-.pt-14 {
-  padding-top: 3.5rem;
+.pt-\[17px\] {
+  padding-top: 17px;
 }
 
 .pt-\[51px\] {
@@ -805,6 +885,11 @@ video {
 
 .text-center {
   text-align: center;
+}
+
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
 }
 
 .text-\[14px\] {
@@ -836,6 +921,15 @@ video {
   line-height: 1.25rem;
 }
 
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
 .font-normal {
   font-weight: 400;
 }
@@ -854,9 +948,17 @@ video {
   color: rgb(0 113 227 / var(--tw-text-opacity));
 }
 
+.text-footertext {
+  color: rgba(0, 0, 0, 0.56);
+}
+
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.underline {
+  text-decoration-line: underline;
 }
 
 .hover\:bg-btncolor:hover {
@@ -867,6 +969,21 @@ video {
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+@media (min-width: 735px) {
+  .sm\:w-1\/2 {
+    width: 50%;
+  }
+
+  .sm\:flex-row {
+    flex-direction: row;
+  }
+
+  .sm\:px-3 {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
 }
 
 @media (min-width: 834px) {
@@ -882,12 +999,8 @@ video {
     height: 580px;
   }
 
-  .md\:w-1\/2 {
-    width: 50%;
-  }
-
-  .md\:flex-row {
-    flex-direction: row;
+  .md\:h-auto {
+    height: auto;
   }
 
   .md\:bg-hero-pattern {
@@ -898,13 +1011,18 @@ video {
     background-image: url('/images/ooo.jpg');
   }
 
-  .md\:bg-watch {
-    background-image: url('/images/watch.jpg');
+  .md\:px-\[22px\] {
+    padding-left: 22px;
+    padding-right: 22px;
   }
 
-  .md\:px-3 {
-    padding-left: 0.75rem;
-    padding-right: 0.75rem;
+  .md\:py-14 {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+  }
+
+  .md\:pb-14 {
+    padding-bottom: 3.5rem;
   }
 
   .md\:pt-11 {
@@ -917,5 +1035,11 @@ video {
 
   .md\:text-\[21px\] {
     font-size: 21px;
+  }
+}
+
+@media (min-width: 1069px) {
+  .lg\:bg-watch {
+    background-image: url('/images/watch.jpg');
   }
 }
