@@ -13,9 +13,14 @@ module.exports = {
       } ,
       backgroundImage: {
         'hero-pattern': "url('./images/iphone16.jpg')",
+        'hero-mini': "url('./images/16promini.jpg')",
         'iphone': "url('/images/ooo.jpg')",
+        'iphone16mini': "url('/images/iphone16mini.jpg')",
         'watch': "url('/images/watch.jpg')",
         'airpod': "url('/images/airpodmini.jpg')",
+        'watchmobile': "url('/images/watchmobile.jpg')",
+
+
 
 
         

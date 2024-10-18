@@ -604,6 +604,10 @@ video {
   margin-left: 13px;
 }
 
+.mt-\[17px\] {
+  margin-top: 17px;
+}
+
 .mt-\[27px\] {
   margin-top: 27px;
 }
@@ -612,12 +616,20 @@ video {
   margin-top: 6px;
 }
 
+.mt-\[9px\] {
+  margin-top: 9px;
+}
+
 .flex {
   display: flex;
 }
 
 .h-12 {
   height: 3rem;
+}
+
+.h-\[500px\] {
+  height: 500px;
 }
 
 .h-\[580px\] {
@@ -671,6 +683,11 @@ video {
        column-gap: 0.75rem;
 }
 
+.gap-x-\[10px\] {
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+
 .gap-y-3 {
   row-gap: 0.75rem;
 }
@@ -705,12 +722,16 @@ video {
   background-color: rgba(22, 22, 23, .8);
 }
 
-.bg-hero-pattern {
-  background-image: url('./images/iphone16.jpg');
+.bg-hero-mini {
+  background-image: url('./images/16promini.jpg');
 }
 
-.bg-iphone {
-  background-image: url('/images/ooo.jpg');
+.bg-iphone16mini {
+  background-image: url('/images/iphone16mini.jpg');
+}
+
+.bg-watchmobile {
+  background-image: url('/images/watchmobile.jpg');
 }
 
 .bg-cover {
@@ -740,6 +761,11 @@ video {
   padding-right: 1rem;
 }
 
+.px-\[15px\] {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 .px-\[21px\] {
   padding-left: 21px;
   padding-right: 21px;
@@ -760,16 +786,37 @@ video {
   padding-bottom: 47px;
 }
 
+.py-\[7px\] {
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
 .pt-12 {
   padding-top: 3rem;
+}
+
+.pt-14 {
+  padding-top: 3.5rem;
+}
+
+.pt-\[51px\] {
+  padding-top: 51px;
 }
 
 .text-center {
   text-align: center;
 }
 
+.text-\[14px\] {
+  font-size: 14px;
+}
+
 .text-\[17px\] {
   font-size: 17px;
+}
+
+.text-\[19px\] {
+  font-size: 19px;
 }
 
 .text-\[21px\] {
@@ -843,15 +890,32 @@ video {
     flex-direction: row;
   }
 
+  .md\:bg-hero-pattern {
+    background-image: url('./images/iphone16.jpg');
+  }
+
+  .md\:bg-iphone {
+    background-image: url('/images/ooo.jpg');
+  }
+
   .md\:bg-watch {
     background-image: url('/images/watch.jpg');
   }
 
-  .md\:bg-airpod {
-    background-image: url('/images/airpodmini.jpg');
+  .md\:px-3 {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
   }
 
   .md\:pt-11 {
     padding-top: 2.75rem;
+  }
+
+  .md\:pt-14 {
+    padding-top: 3.5rem;
+  }
+
+  .md\:text-\[21px\] {
+    font-size: 21px;
   }
 }
